@@ -1,0 +1,20 @@
+#snake.py
+import turtle
+turtle.setup(1200,700,200,200)
+turtle.penup()
+turtle.goto(-100,0)
+turtle.fd(-250)
+turtle.pendown()
+turtle.pensize(25)
+turtle.pencolor((0.76,0.23,0.89))
+turtle.seth(-40)
+for i in range(8):
+    turtle.circle(40,80)
+    turtle.seth(10)
+    turtle.circle(-40,80)
+    turtle.seth(-10)
+turtle.circle(40,80/2)
+turtle.fd(40)
+turtle.circle(16,180)
+turtle.fd(40*2/3)
+turtle.done()
